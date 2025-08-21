@@ -228,3 +228,103 @@ footer {
         background-position: 0% 50%;
     }
 }
+
+
+/* Existing body and overlay styles here ... */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body::before {
+        filter: blur(6px) brightness(0.5);
+        background-position: center top;
+        transform: scale(1.1);
+    }
+
+    .game-container {
+        width: 95%;
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    h1.title {
+        font-size: 1.8rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .score-board {
+        font-size: 1.2rem;
+        gap: 3rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+
+    .choices {
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .choice {
+        width: 130px;
+        height: 130px;
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    body::before {
+        filter: blur(5px) brightness(0.5);
+        background-position: center center;
+    }
+
+    .game-container {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    h1.title {
+        font-size: 1.5rem;
+    }
+
+    #msg {
+        font-size: 1.3rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2rem;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .choice {
+        width: 100px;
+        height: 100px;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
